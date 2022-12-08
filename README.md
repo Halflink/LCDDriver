@@ -31,10 +31,10 @@ Please note that Pi & electronics are my hobby. **I'm not a professional**, and 
 ### Hardware ###
 * Raspberry Pi 3B / 4B
 * [HD44780 with I2C adapter module](https://www.benselectronics.nl/16-x-2-hd44780-lcd-gemonteerde-i2c-adaptor-module.html)
+   <br>
 
-<br>
+   Alternatively you could buy a [HD44780](https://www.benselectronics.nl/16-x-2-hd44780-lcd-display.html) and the [I2C module](https://www.benselectronics.nl/i2c-module-1602-2004-lcd.html) separately.
 
-Alternatively you could buy a [HD44780](https://www.benselectronics.nl/16-x-2-hd44780-lcd-display.html) and the [I2C module](https://www.benselectronics.nl/i2c-module-1602-2004-lcd.html) separately.
 * [I2C Bi-directional Logic Level Converter](https://elektronicavoorjou.nl/product/4-channel-i2c-logic-level-converter/)
 
 <br>
