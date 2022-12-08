@@ -64,7 +64,7 @@ Also, the number of channels differ. You need 2, which means 8 pins (HV, GND, HS
 The one I actually used has pins on one side called `GND`, `HV`, `A1`, `A2`, `A3` and `A4`, and on hte other side called `GND`, `LV`, `B1`, `B2`, `B3` and `B4`. 
 I've also seen converters using pin names  `HV`, `HV1`, `HV2`, `GND` on one side and `LV`, `LV1`, `LV2`, `GND` on the other, and probably there are more variants out there.
 <br>
-More information why using the level converter you can find [here](https://littlebirdelectronics.com.au/guides/196/using-a-logic-level-shifter-with-raspberry-pi).
+More information why using the level converter you can find [here](https://littlebirdelectronics.com.au/guides/196/using-a-logic-level-shifter-with-raspberry-pi) .
 There are people out there suggesting you do not need the converter, as long as you disable the pull-up resistors. [Here](https://community.element14.com/products/raspberry-pi/f/forum/19334/is-level-shifting-really-needed-for-i2c) you can find a discussion about that.
 My advice would be a quote from Brian Cohen: *'You don't need to follow me. You don't need to follow anybody! You've got to think for yourselves! You're all individuals!'*
 <br>
@@ -91,9 +91,13 @@ I assume you have the I2C adapter already soldered on the LCD display. If not, t
    1. Open the config menu by typing `sudo raspi-config`
    2. Go to 'advanced settings'
    <br>
+
    ![AdvancedSettings](/docs/raspi-config_1.png)
-   3. Select 'I2C Enable/Disable automatic loading'
+   
+   5. Select 'I2C Enable/Disable automatic loading'
+   
    ![AdvancedSettings](/docs/raspi-config_2.png)
+
 5. Reboot your pi
 
 ### Python ###
