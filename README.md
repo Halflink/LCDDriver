@@ -7,7 +7,7 @@
 | Date:         | 2022-12-08         |
 | Last update:  | 2022-12-08         |
 | Project type: | Raspberry Pi       | 
-
+etje van slag door de aankomende conferentie...zelfs de lokale zebrapaden en opst
 
 ### Executable ###
 * None
