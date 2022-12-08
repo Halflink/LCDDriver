@@ -105,7 +105,37 @@ I assume you have the I2C adapter already soldered on the LCD display. If not, t
 
 ![scan i2c](/docs/i2c_device_scan.png)
 
+note the address here, 27. You need this when initiating your LCD in python
+
 ### Python ###
+ 
+Alter the `lcd = LcdDriver()` line of LcdDriver.py in case your address is NOT 27. Imagine your address is 68, you can change the line to `lcd = LcdDriver(lcd_address=0x68)`.
+Now run the test! `python3 LcdDriver.py`
+<br>
+<br>
+Using the code in your project, you simply add the LcdDriver.py to your project and import it. 4 things you need to do in your code:
+1. import it `from LcdDriver.py import LcdDriver`
+2. Initialise: `lcd = LcdDriver()`. There are 3 options you can give here:
+   1. lcd_address (default 0x27)
+   2. lcd_with (default 16)
+   3. lcd_lines (default 2)
+3. Show something! `lcd.lcd_string('Halflink',0)` First parameter is the text you want to show, second is the line number (starting from 0)
+
+In case you want to know more on how I2C works, I found [this](https://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/) helpful.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
