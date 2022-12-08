@@ -34,6 +34,7 @@ Alternatively you could buy a [HD44780](https://www.benselectronics.nl/16-x-2-hd
 <br>
 Make sure its BI-directional! See explanation of the wiring why. 
 ***
+
 ## The project ##
 Finally, the project! Start with the wiring. 
 
