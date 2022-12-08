@@ -101,6 +101,9 @@ I assume you have the I2C adapter already soldered on the LCD display. If not, t
    ![AdvancedSettings](/docs/raspi-config_2.png)
 
 5. Reboot your pi
+6. Open a terminal again and check the address of the LCD. Make sure only one device is connected to the I2C ports (yes, you can staple multiple devices ;) ) `i2cdetect -y 1`
+
+![scan i2c](/docs/i2c_device_scan.png)
 
 ### Python ###
 
