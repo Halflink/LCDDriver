@@ -66,27 +66,21 @@ There is a way to solve this: Logic level converters. There are a few out there,
 Also, the number of channels differ. You need 2, which means 8 pins (HV, GND, HSCL, HSDA, LV, GND, LSCL, LSDA). And to add to the confusion, there are different ways to name the pins too.
 The one I actually used has pins on one side called `GND`, `HV`, `A1`, `A2`, `A3` and `A4`, and on hte other side called `GND`, `LV`, `B1`, `B2`, `B3` and `B4`. 
 I've also seen converters using pin names  `HV`, `HV1`, `HV2`, `GND` on one side and `LV`, `LV1`, `LV2`, `GND` on the other, and probably there are more variants out there.
-
-<br>
-
 More information why using the level converter you can find [here](https://littlebirdelectronics.com.au/guides/196/using-a-logic-level-shifter-with-raspberry-pi) .
 There are people out there suggesting you do not need the converter, as long as you disable the pull-up resistors. [Here](https://community.element14.com/products/raspberry-pi/f/forum/19334/is-level-shifting-really-needed-for-i2c) you can find a discussion about that.
-My advice would be a quote from Brian Cohen: *'You don't need to follow me. You don't need to follow anybody! You've got to think for yourselves! You're all individuals!'*
-
-<br>
-
+My advice would be a quote from Brian Cohen: *'You don't need to follow me. You don't need to follow anybody! You've got to think for yourselves! You're all individuals!'*.<br>
 And now the pinning:
-    1. place the converter on the breadboard, the 5V side up (near the 5 volts line)
-    2. Connect the `HV` (the VCC high) to the 5V line on the breadboard
-    3. Connect the `GND` of the high side to a GND line on the breadboard
-    4. Connect the `LV` (the VCC low) to the 3v3 line on the breadboard
-    5. Connect the `LV1` or `B1` (depending on your I2C type) to PI `pin 5 (SCL)` (green wire)
-    6. Connect the `LV2` or `B2` (depending on your I2C type) to PI `pin 3 (SDA)` (yellow wire)
-4. Connect the LCD display 
+   1. place the converter on the breadboard, the 5V side up (near the 5 volts line)
+   2. Connect the `HV` (the VCC high) to the 5V line on the breadboard
+   3. Connect the `GND` of the high side to a GND line on the breadboard
+   4. Connect the `LV` (the VCC low) to the 3v3 line on the breadboard
+   5. Connect the `LV1` or `B1` (depending on your I2C type) to PI `pin 5 (SCL)` (green wire)
+   6. Connect the `LV2` or `B2` (depending on your I2C type) to PI `pin 3 (SDA)` (yellow wire)
 
-<br>   
+3. Connect the LCD display 
+   <br>   
 
-I assume you have the I2C adapter already soldered on the LCD display. If not, the wiring is straightforward. `pin 1` to `pin 1`, `pin 2` to `pin 2`, ..`pin 16` to `pin 16`.
+   I assume you have the I2C adapter already soldered on the LCD display. If not, the wiring is straightforward. `pin 1` to `pin 1`, `pin 2` to `pin 2`, ..`pin 16` to `pin 16`.
    1. Connect `VCC` to `HV` line of the converter on the breadboard
    2. Connect `GND` to the GND line on the breadboard
    3. Connect `SCL` to the `HV1` or `A1` line of the converter on the breadboard
@@ -104,7 +98,7 @@ I assume you have the I2C adapter already soldered on the LCD display. If not, t
 
    ![AdvancedSettings](/docs/raspi-config_1.png)
    
-   5. Select 'I2C Enable/Disable automatic loading'
+   3. Select 'I2C Enable/Disable automatic loading'
    
    ![AdvancedSettings](/docs/raspi-config_2.png)
 
