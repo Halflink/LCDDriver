@@ -61,6 +61,7 @@ The 5 volts get the orange wires, and the upper plus-line on the breadboard.
    4. Connect PI `pin 6 (GND)` to the bottom breadboard GND line (black)
 2. Connect the I2C logic level converter.
 <br>
+
 The voltage difference between your Pi and the display presents a challenge. Either the display does not get enough juice, or changes are you fry your GPIO ports.
 There is a way to solve this: Logic level converters. There are a few out there, and not all of them will work. Make sure you have a bi-directional, so you do not need to worry if you go from 3v3 to 5 or from 5 to 3v3.
 Also, the number of channels differ. You need 2, which means 8 pins (HV, GND, HSCL, HSDA, LV, GND, LSCL, LSDA). And to add to the confusion, there are different ways to name the pins too.
