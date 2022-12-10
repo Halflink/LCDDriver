@@ -78,6 +78,7 @@ And now the pinning:
    5. Connect the `LV1` or `B1` (depending on your I2C type) to PI `pin 5 (SCL)` (green wire)
    6. Connect the `LV2` or `B2` (depending on your I2C type) to PI `pin 3 (SDA)` (yellow wire)
 
+
 **Connect the LCD display**<br>   
 
 I assume you have the I2C adapter already soldered on the LCD display. If not, the wiring is straightforward. `pin 1` to `pin 1`, `pin 2` to `pin 2`, ..`pin 16` to `pin 16`.
