@@ -49,9 +49,9 @@ Finally, the project! Start with the wiring.
 
 ![Breadboard set-up](/docs/lcddriver_bb.png)
 
-1. Connect power and GND
-    <br>
-    As your Pi and its GPIO ports works on 3v3 volts and the LCD display on 5 volts, you will need both on your breadboard. 
+**Connect power and GND**<br>
+
+As your Pi and its GPIO ports works on 3v3 volts and the LCD display on 5 volts, you will need both on your breadboard. 
 Luckily the Pi produces both. I see 3v3 as the 'main' voltage. This is why I use the red wires for 3v3. 
 On the breadboard I use the lower plus-line for the 3v3 voltages. 
 The 5 volts get the orange wires, and the upper plus-line on the breadboard.    
@@ -59,8 +59,8 @@ The 5 volts get the orange wires, and the upper plus-line on the breadboard.
    2. connect PI `pin 2 (5V)` to the top breadboard plus line (orange)
    3. connect the breadboard bottom and top GND lines (black)
    4. Connect PI `pin 6 (GND)` to the bottom breadboard GND line (black)
-2. Connect the I2C logic level converter.
-<br>
+
+**Connect the I2C logic level converter**<br>
 
 The voltage difference between your Pi and the display presents a challenge. Either the display does not get enough juice, or changes are you fry your GPIO ports.
 There is a way to solve this: Logic level converters. There are a few out there, and not all of them will work. Make sure you have a bi-directional, so you do not need to worry if you go from 3v3 to 5 or from 5 to 3v3.
@@ -78,10 +78,9 @@ And now the pinning:
    5. Connect the `LV1` or `B1` (depending on your I2C type) to PI `pin 5 (SCL)` (green wire)
    6. Connect the `LV2` or `B2` (depending on your I2C type) to PI `pin 3 (SDA)` (yellow wire)
 
-3. Connect the LCD display 
-   <br>   
+**Connect the LCD display**<br>   
 
-   I assume you have the I2C adapter already soldered on the LCD display. If not, the wiring is straightforward. `pin 1` to `pin 1`, `pin 2` to `pin 2`, ..`pin 16` to `pin 16`.
+I assume you have the I2C adapter already soldered on the LCD display. If not, the wiring is straightforward. `pin 1` to `pin 1`, `pin 2` to `pin 2`, ..`pin 16` to `pin 16`.
    1. Connect `VCC` to `HV` line of the converter on the breadboard
    2. Connect `GND` to the GND line on the breadboard
    3. Connect `SCL` to the `HV1` or `A1` line of the converter on the breadboard
@@ -116,7 +115,9 @@ Alter the `lcd = LcdDriver()` line of LcdDriver.py in case your address is NOT 2
 Now run the test! `python3 LcdDriver.py`
 <br>
 <br>
-Using the code in your project, you simply add the LcdDriver.py to your project and import it. 4 things you need to do in your code:
+
+**Using the code in your project**<br>
+You simply add the LcdDriver.py to your project and import it. 4 things you need to do in your code:
 1. import it `from LcdDriver.py import LcdDriver`
 2. Initialise: `lcd = LcdDriver()`. There are 3 options you can give here:
    1. lcd_address (default 0x27)
