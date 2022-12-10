@@ -74,8 +74,8 @@ if __name__ == '__main__':
     lcd = LcdDriver()
     try:
         while True:
-            lcd.lcd_string("github.com/halflink", lcd.LCD_LINE_ADDRESS[0])
-            lcd.lcd_string("TEST LCD Driver", lcd.LCD_LINE_ADDRESS[1])
+            lcd.lcd_string("github.com/", lcd.LCD_LINE_ADDRESS[0])
+            lcd.lcd_string("halflink", lcd.LCD_LINE_ADDRESS[1])
             lcd.time.sleep(10)
             lcd.lcd_string("Please read README.md", lcd.LCD_LINE_ADDRESS[1])
     except KeyboardInterrupt:
