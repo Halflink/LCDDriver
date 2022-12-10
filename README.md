@@ -115,6 +115,7 @@ note the address here, 27. You need this when initiating your LCD in python
 Alter the `lcd = LcdDriver()` line of LcdDriver.py in case your address is NOT 27. Imagine your address is 68, you can change the line to `lcd = LcdDriver(lcd_address=0x68)`.
 Now run the test! `python3 LcdDriver.py`
 ![Run LcdDriver.py](/docs/run_lcddriver.png)
+![LCD running](/docs/lcd_running.png)
 
 <br>
 
