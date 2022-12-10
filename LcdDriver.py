@@ -78,6 +78,7 @@ if __name__ == '__main__':
             lcd.lcd_string("Read README.md", lcd.LCD_LINE_ADDRESS[1])
             lcd.time.sleep(2)
             lcd.lcd_string("halflink", lcd.LCD_LINE_ADDRESS[0])
+            lcd.time.sleep(2)
     except KeyboardInterrupt:
         pass
     finally:
